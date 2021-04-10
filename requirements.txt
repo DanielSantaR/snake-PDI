@@ -1,0 +1,4 @@
+pygame==2.0.1
+opencv-python==4.5.1.48
+imutils==0.5.4
+PyAutoGUI==0.9.52
