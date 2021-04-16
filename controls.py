@@ -96,17 +96,17 @@ class Controls:
                 center = self.centroid_calculate(c)
 
                 # ---- Posiciones en la pantalla para presionar botones --------------------------------------------
-                if x > 320 and y > 74 and y < 207:
+                if x > 300 and y > 74 and y < 207:
                     pyautogui.press("right", _pause=False)
                 elif x < 170 and y > 35 and y < 200:
                     pyautogui.press("left", _pause=False)
-                elif y < 74 and x > 150 and x < 350:
+                elif y < 90 and x > 150 and x < 350:
                     pyautogui.press("up", _pause=False)
-                elif y > 207 and x > 150 and x < 350:
+                elif y > 180 and x > 150 and x < 350:
                     pyautogui.press("down", _pause=False)
 
                 # ----  Cumple la si el radio del objeto detectado es mayor a 10 ------------------------------------
-                if radius > 10:
+                if radius > 5:
                     # ----  Dibujar los circulos alrededor del objeto -----------------------------------------------
                     cv2.circle(frame, (int(x), int(y)), int(radius), (0, 255, 255), 2)
                     cv2.circle(frame, center, 5, (0, 255, 255), -1)
@@ -145,7 +145,7 @@ class Controls:
     # ---- 4. Tecnicas de filtrado sobre las imágenes  --------------------------------------------------------------
     # ---------------------------------------------------------------------------------------------------------------
     def filter_techniques(self, frame):
-        # ----  Aplicar filtro gaussian bllur de tamaño 5, remover el exceso de ruido -------------------------------
+        # ----  Aplicar filtro gaussian blur de tamaño 5, remover el exceso de ruido -------------------------------
         blurred_frame = cv2.GaussianBlur(frame, (5, 5), 0)
         # ----  Convertir frame rgb a hsv para mejor segmentacion ---------------------------------------------------
         hsv_converted_frame = cv2.cvtColor(blurred_frame, cv2.COLOR_BGR2HSV)

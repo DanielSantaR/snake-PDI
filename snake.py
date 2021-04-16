@@ -18,7 +18,7 @@ class Snake:
         self.dis_height = 400
 
         self.dis = pygame.display.set_mode((self.dis_width, self.dis_height))
-        pygame.display.set_caption("Snake Game by Daniel")
+        pygame.display.set_caption("Snake Game")
 
         self.clock = pygame.time.Clock()
 
@@ -131,6 +131,7 @@ class Snake:
                     * 10.0
                 )
                 Length_of_snake += 1
+                self.snake_speed += 0.4
 
             self.clock.tick(self.snake_speed)
 
