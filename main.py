@@ -2,8 +2,8 @@ from typing import Any
 
 import threading
 
-from controls import Controls
-from snake import Snake
+from src.controls import Controls
+from src.snake import Snake
 
 
 class Main:
