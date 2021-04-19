@@ -40,7 +40,7 @@ class Controls:
     # --------------------------------------------------------------------------------------------------------------
     # -- 2. Inicialización de las variables de la clase y carga de la imagen de fondo de los controles -------------
     # --------------------------------------------------------------------------------------------------------------
-    def main(self):
+    def __init__(self):
         # ---- Límites inferiores en el mapa HSV -------------------------------------------------------------------
         self.greenLower = (50, 40, 200)
         self.greenUpper = (86, 255, 255)
@@ -55,7 +55,8 @@ class Controls:
 
         # ---- Inicia video ----------------------------------------------------------------------------------------
         self.video_capture = cv2.VideoCapture(0)
-
+    
+    def __call__(self):
         # ---- Inicio del loop para el procesamiento de imagen -----------------------------------------------------
         self.video_camera()
 
@@ -186,4 +187,4 @@ class Controls:
 
 if __name__ == "__main__":
     controls = Controls()
-    controls.main()
+    controls()

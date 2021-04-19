@@ -14,7 +14,7 @@ class Main:
         thread.start()
 
         controls = Controls()
-        controls.main()
+        controls()
 
 
 if __name__ == "__main__":
