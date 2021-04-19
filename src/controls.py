@@ -4,7 +4,7 @@
 # ------- Por: Daniel Santa Rendón   daniel.santar@udea.edu.co--------------
 # -------      Estudiante de ingeniería de sistemas ------------------------
 # -------      Universidad de Antioquia ------------------------------------
-# ------- Por: Bryan Zuleta Veléz    bryan.zuleta@udea.edu.co---------------
+# ------- Por: Bryan Zuleta Vélez    bryan.zuleta@udea.edu.co---------------
 # -------      Estudiante de ingeniería de sistemas ------------------------
 # -------      Universidad de Antioquia ------------------------------------
 # ------- Curso Básico de Procesamiento de Imágenes y Visión Artificial-----
